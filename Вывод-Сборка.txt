@@ -1,0 +1,5 @@
+﻿Сборка начата…
+1>------ Сборка начата: проект: console_Application_For_My_stile, Конфигурация: Debug Win32 ------
+1>LINK : fatal error LNK1168: не удается открыть D:\Visual Studio\console_Application_For_My_stile\Debug\console_Application_For_My_stile.exe для записи
+1>Сборка проекта "console_Application_For_My_stile.vcxproj" завершена с ошибкой.
+========== Сборка: успешно: 0, с ошибками: 1, без изменений: 0, пропущено: 0 ==========
