@@ -18,11 +18,11 @@ int main()
         for (int j = 0; j < n; j++)
         {
             matr[i][j] = rand() % n;
-            if (matr[i][j] == 0)
+            /*if (matr[i][j] == 0)
             {
                 matr[i][j] = rand() % n;
 
-            }
+            }*/
             if (matr[i][j] > max)
             {
                 max = matr[i][j];
@@ -37,21 +37,29 @@ int main()
     for (int i = 0; i < n; i++)
     {
         int proizv = 1;
+        int sum = 0;
 
         for (int j = 0; j < n; j++)
         {
             cout << setw(3) << matr[i][j];
             proizv *= matr[i][j];
+            
+            if (matr[i][j] == 6)
+            {
+                a = true;
+                sum += matr[i][j];
+            }
         }
         cout << endl;
         if (proizv < minproizv)
         {
             minproizv = proizv;
         }
+        cout << "summa = " << sum << endl;
     }
     cout << endl << "minproizv = " << minproizv << endl;
 
-    for (int i = 0; i < n; i++)
+    /*for (int i = 0; i < n; i++)
     {
         int sum = 0;
         
@@ -71,7 +79,7 @@ int main()
             }
         }
         cout << "summa = " << sum << endl;
-    }
+    }*/
 
 }
 
